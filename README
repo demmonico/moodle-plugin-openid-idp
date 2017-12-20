@@ -15,7 +15,7 @@ Is forked from version v0.1.1 sourced from `https://moodle.org/plugins/pluginver
 Installation
 ------------
 1. copy the contents of this package into /local/openid_idp in your Moodle install OR
-   just run `git clone https://github.com/demmonico/moodle-plugin-openid-idp`
+   just run `mkdir openid_idp && git clone https://github.com/demmonico/moodle-plugin-openid-idp openid_idp`
 
 2. go to `Site administration -> Notifications` and install all updates
 
