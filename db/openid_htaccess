@@ -1,0 +1,16 @@
+# prevent directory listings
+Options -Indexes
+IndexIgnore */*
+DirectoryIndex index.php index.html
+
+# follow symbolic links
+Options FollowSymlinks
+
+# use mod_rewrite for pretty URL support
+RewriteEngine on
+
+# prevent httpd from serving dotfiles (.htaccess, .svn, .git, etc.)
+RedirectMatch 403 /\..*$
+
+# openid redirect
+RewriteRule ^openid/(.*)$ local/openid_idp/$1 [L,NC]
